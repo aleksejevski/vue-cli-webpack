@@ -24,6 +24,12 @@ module.exports = {
       "type": "string",
       "message": "Author"
     },
+    "port": {
+      "type": "string",
+      "required": true,
+      "message": "Default port for webpack",
+      "default": "8800"
+    },
     "build": {
       "type": "list",
       "message": "Vue build",
@@ -39,6 +45,14 @@ module.exports = {
           "short": "runtime"
         }
       ]
+    },
+    "less": {
+      "type":   "confirm",
+      "message":"Use LESS to write your style sheet?"
+    },
+    "pug": {
+      "type":   "confirm",
+      "message":"Use Pug to write your templates?"
     },
     "router": {
       "type": "confirm",

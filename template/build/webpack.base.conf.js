@@ -40,6 +40,18 @@ module.exports = {
         }
       },
       {{/lint}}
+      {{#less}}
+      {
+        test: /\.less$/,
+        loader: 'less'
+      },
+      {{/less}}
+      {{#pug}}
+      {
+        test: /\.(jade|pug)$/,
+        loader: 'pug'
+      },
+      {{/pug}}
       {
         test: /\.vue$/,
         loader: 'vue-loader',

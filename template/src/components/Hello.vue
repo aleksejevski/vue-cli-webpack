@@ -1,4 +1,21 @@
-<template>
+<template{{#pug}} lang="pug"{{/pug}}>
+  {{#pug}}
+    .hello
+      h1 \{{ msg }}
+      h2 Essential Links
+      ul
+        li #[a(href="https://vuejs.org",target="_blank") Core Docs]
+        li #[a(href="https://forum.vuejs.org",target="_blank") Forum]
+        li #[a(href="https://gitter.im/vuejs/vue",target="_blank") Gitter Chat]
+        li #[a(href="https://twitter.com/vuejs",target="_blank") Twitter]
+        br 
+        li #[a(href="http://vuejs-templates.github.io/webpack/",target="_blank") Docs for This Template]
+      ul
+        li #[a(href="http://router.vuejs.org/",target="_blank") vue-router]
+        li #[a(href="http://vuex.vuejs.org/",target="_blank") vuex]
+        li #[a(href="http://vue-loader.vuejs.org/",target="_blank") vue-loader]
+        li #[a(href="https://github.com/vuejs/awesome-vue",target="_blank") awesome-vue]
+  {{else}}
   <div class="hello">
     <h1>\{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -18,6 +35,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
   </div>
+  {{/pug}}
 </template>
 
 <script>
@@ -32,7 +50,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style{{#less}} lang="less"{{/less}} scoped>
 h1, h2 {
   font-weight: normal;
 }
