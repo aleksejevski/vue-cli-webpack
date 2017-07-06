@@ -41,6 +41,14 @@
 <script>
 export default {
   name: 'hello',
+  {{#seo}}
+  metaInfo: {
+    // Here to set your SEO info.
+    meta: [ 
+      { name: 'description', content: "Welcome to Your Vue.js App!" }
+    ]
+  },
+  {{/seo}}
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
     return {
       msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}

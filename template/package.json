@@ -14,7 +14,8 @@
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
   },
   "dependencies": {
-    "vue": "^2.3.3"{{#router}},
+    "vue": "^2.3.3"{{#seo}},
+    "vue-meta": "^1.0.4"{{/seo}}{{#router}},
     "vue-router": "^2.5.3"{{/router}}{{#vuex}},
     "vuex": "^2.3.1"{{/vuex}}{{#sync}},
     "vuex-router-sync": "^4.1.0"{{/sync}}
@@ -95,6 +96,9 @@
     "opn": "^4.0.2",
     "optimize-css-assets-webpack-plugin": "^1.3.0",
     "ora": "^1.2.0",
+    {{#seo}}
+    "prerender-spa-plugin": "^2.0.1",
+    {{/seo}}
     {{#pug}}
     "pug": "^2.0.0-beta9",
     "pug-loader": "^2.3.0",

@@ -15,6 +15,8 @@
 
 - Vuex included! Optional [vuex-router-sync](https://github.com/vuejs/vuex-router-sync) added, too!
 
+- SEO supports with [vue-meta](https://github.com/declandewet/vue-meta) and Webpack's [prerender-spa-plugin](https://www.npmjs.com/package/prerender-spa-plugin).
+
 ## Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**

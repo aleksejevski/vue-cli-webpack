@@ -6,7 +6,7 @@ module.exports = {
       }
 
       return options.inverse(this);
-    }
+    },
   },
   "prompts": {
     "name": {
@@ -66,6 +66,10 @@ module.exports = {
       "when": "router && vuex",
       "type": "confirm",
       "message": "Install vue-router-sync?"
+    },
+    "seo": {
+      "type": "confirm",
+      "message": "Require Search Engine Optimization (SEO) with vue-meta and prerender-spa-plugin?"
     },
     "lint": {
       "type": "confirm",

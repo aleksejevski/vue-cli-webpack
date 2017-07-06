@@ -22,6 +22,11 @@ import { sync } from 'vuex-router-sync'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 sync(store,router){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/sync}}
 
+{{#seo}}
+import meta from 'vue-meta'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(meta){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/seo}}
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
