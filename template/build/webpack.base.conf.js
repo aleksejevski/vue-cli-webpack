@@ -43,13 +43,13 @@ module.exports = {
       {{#less}}
       {
         test: /\.less$/,
-        loader: 'less'
+        loader: 'less-loader'
       },
       {{/less}}
       {{#pug}}
       {
         test: /\.(jade|pug)$/,
-        loader: 'pug'
+        loader: 'pug-loader'
       },
       {{/pug}}
       {
