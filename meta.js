@@ -69,7 +69,8 @@ module.exports = {
     },
     "seo": {
       "type": "confirm",
-      "message": "Require Search Engine Optimization (SEO) with vue-meta and prerender-spa-plugin?"
+      "message": "Require Search Engine Optimization (SEO) with vue-meta and prerender-spa-plugin?",
+      "default": false,
     },
     "lint": {
       "type": "confirm",

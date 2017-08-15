@@ -4,29 +4,25 @@
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#router}}
-import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/router}}
-{{#vuex}}
-import store from './vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/vuex}}
 
+{{#router}}import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}{{/router}}
+{{#vuex}}import store from './vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}{{/vuex}}
 {{#router}}
-router.beforeEach((to,from,next) => {   // Here to customize your router's actions.
+router.beforeEach((to, from, next) => {   // Here to customize your router's actions.
   next(){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/router}}
 
+{{/router}}
 {{#sync}}
 import { sync } from 'vuex-router-sync'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-sync(store,router){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/sync}}
+sync(store, router){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
+{{/sync}}
 {{#seo}}
 import meta from 'vue-meta'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(meta){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/seo}}
 
+{{/seo}}
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
